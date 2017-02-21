@@ -1,0 +1,15 @@
+<ivy-module version="2.0">
+    <info organisation="com.myspotontheweb" module="demo"/>
+
+    <configurations defaultconfmapping="compile->default">
+        <conf name="main" description="Additional run-time dependencies"/>
+        <conf name="test" description="Required for test only" extends="main"/>
+    </configurations>
+
+    <dependencies>
+        <dependency org="org.seleniumhq.selenium" name="selenium-java" rev="2.53.1" conf="main->default"/>
+        <dependency org="org.seleniumhq.selenium" name="selenium-chrome-driver" rev="2.53.1" conf="main->default"/>        
+        
+    </dependencies>
+
+</ivy-module>
